@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Josefin Sans";
+}
+
+main {
+  width: 110rem;
+  height: 60rem;
+  background-color: hsl(216, 12%, 8%);
+  margin: 5rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 50rem;
+  height: 50rem;
+  background-color: hsl(213, 19%, 18%);
+
+  border-radius: 25px;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.rate_form {
+  display: flex;
+  flex-direction: column;
+
+  /* transform: translateY(30px); */
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 999px;
+  /* background-color: #777; */
+  border: 3px solid #777;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+}
+
+header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.text {
+  margin-bottom: 3rem;
+}
+
+.text p {
+  font-size: 2rem;
+  line-height: 25px;
+  color: hsl(217, 12%, 63%);
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  transition: 0.2s;
+}
+
+.rate_value {
+  color: hsl(217, 12%, 63%);
+  font-size: 2.3rem;
+}
+
+.rate_value:hover {
+  color: #fff;
+  border-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  font-size: 2.7rem;
+}
+
+.activ {
+  color: #fff;
+  border-color: hsl(217, 12%, 63%);
+  background-color: hsl(217, 12%, 63%);
+}
+
+.btn {
+  align-self: center;
+  width: 44rem;
+  height: 6rem;
+
+  border-radius: 50px;
+  border: 3px solid #777;
+
+  background-color: transparent;
+  text-transform: uppercase;
+  color: hsl(217, 12%, 63%);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: hsl(25, 97%, 53%);
+  border: 3px solid #fff;
+  background-color: #fff;
+}

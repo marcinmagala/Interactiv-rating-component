@@ -23,16 +23,16 @@ const btnSubmitClicked = function (e) {
   btnRate.forEach((btn) => {
     if (btn.classList.contains("active")) {
       rate_Value = btn.dataset.value;
+
+      rateForm.classList.add("hidden");
+      thanksState.classList.remove("hidden");
+
+      const thanksRateInfoText = document.createElement("p");
+      thanksRateInfoText.innerText = `You selected ${rate_Value} out of 5`;
+
+      thanksRateInfo.appendChild(thanksRateInfoText);
     }
   });
-
-  rateForm.classList.add("hidden");
-  thanksState.classList.remove("hidden");
-
-  const thanksRateInfoText = document.createElement("p");
-  thanksRateInfoText.innerText = `You selected ${rate_Value} out of 5`;
-
-  thanksRateInfo.appendChild(thanksRateInfoText);
 };
 
 btnRate.forEach((btn) => btn.addEventListener("click", btnRateClicked));

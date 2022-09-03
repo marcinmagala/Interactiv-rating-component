@@ -1,3 +1,5 @@
+"use strict";
+
 const btnSubmit = document.querySelector(".btn");
 const btnRate = document.querySelectorAll(".rate_value");
 const rateForm = document.querySelector(".rate_form");
